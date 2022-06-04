@@ -1,4 +1,4 @@
-# jmx-caller
+# JMXCLIENT
 This is a simple utility to work with JMX from command line interface.
 
 Requirements:
