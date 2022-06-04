@@ -8,10 +8,10 @@ import java.util.Arrays;
 {
   final String help = "This is a simple utility to work with JMX from command line interface.\n" +
     "Usage:\n" +
-    "  jshell -R-Dpid=PID -R-Dcommand=getBeans --startup calljmx.jsh\n" +
-    "  jshell -R-Dpid=PID -R-Dcommand=getBeanInfo -R-Dbean=java.lang:type=Memory --startup calljmx.jsh\n" +
-    "  jshell -R-Dpid=PID -R-Dcommand=getAttribute -R-Dbean=java.lang:type=Memory -R-Dmethod=HeapMemoryUsage --startup calljmx.jsh\n" +
-    "  jshell -R-Dpid=PID -R-Dcommand=invoke -R-Dbean=java.lang:type=Memory -R-Dmethod=gc --startup calljmx.jsh\n" +
+    "  jshell -R-Dpid=PID -R-Dcommand=getBeans jmxclient.jsh\n" +
+    "  jshell -R-Dpid=PID -R-Dcommand=getBeanInfo -R-Dbean=java.lang:type=Memory jmxclient.jsh\n" +
+    "  jshell -R-Dpid=PID -R-Dcommand=getAttribute -R-Dbean=java.lang:type=Memory -R-Dmethod=HeapMemoryUsage jmxclient.jsh\n" +
+    "  jshell -R-Dpid=PID -R-Dcommand=invoke -R-Dbean=java.lang:type=Memory -R-Dmethod=gc jmxclient.jsh\n" +
     "Available options:\n" +
     "  -R-Dpid=PID - process id you want attach to\n" +
     "  -R-Dcommand=help|getBeans|getBeanInfo|getAttribute|invoke - specify what to do\n" +

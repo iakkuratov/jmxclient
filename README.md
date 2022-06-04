@@ -6,10 +6,10 @@ Requirements:
 - management agent have to be started. Can be started on running JVM with `jcmd PID ManagementAgent.start_local`
 
 Usage:
-- `jshell -R-Dpid=PID -R-Dcommand=getBeans calljmx.jsh`
-- `jshell -R-Dpid=PID -R-Dcommand=getBeanInfo -R-Dbean=java.lang:type=Memory calljmx.jsh`
-- `jshell -R-Dpid=PID -R-Dcommand=getAttribute -R-Dbean=java.lang:type=Memory -R-Dmethod=HeapMemoryUsage calljmx.jsh`
-- `jshell -R-Dpid=PID -R-Dcommand=invoke -R-Dbean=java.lang:type=Memory -R-Dmethod=gc calljmx.jsh`
+- `jshell -R-Dpid=PID -R-Dcommand=getBeans jmxclient.jsh`
+- `jshell -R-Dpid=PID -R-Dcommand=getBeanInfo -R-Dbean=java.lang:type=Memory jmxclient.jsh`
+- `jshell -R-Dpid=PID -R-Dcommand=getAttribute -R-Dbean=java.lang:type=Memory -R-Dmethod=HeapMemoryUsage jmxclient.jsh`
+- `jshell -R-Dpid=PID -R-Dcommand=invoke -R-Dbean=java.lang:type=Memory -R-Dmethod=gc jmxclient.jsh`
 
 Available options:
 - `-R-Dpid=PID` - java process id you want attach to
